@@ -1,5 +1,7 @@
-; Factor out the paths
-(defparameter *node-pic* (sdl2:load-bmp "/tmp/test.bmp"))
+					; Factor out the paths
+
+(defparameter *node-filename* (merge-pathnames "test.bmp" #.*compile-file-pathname*))
+(defparameter *node-pic* (sdl2:load-bmp *node-filename*))
 (defvar *background-rgb*)
 
 (defparameter *frame-delay* 0.01)

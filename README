@@ -1,0 +1,5 @@
+Use (start-sim) to generate a test graph and begin simulation. The nodes will
+begin to oscillate and eventually converge to positions on a fixed grid.
+
+Then (set=force-breakpoint <float>) to change their force parameters,
+getting them to settle on new positions
